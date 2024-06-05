@@ -3,7 +3,10 @@
 const numArray = [1, 2, 2, 3, 4, 4, 5];
 
 //Use a seguinte função para sua resposta
-function removeDup() {}
+function removeDup(array) {
+    return [...new Set(array)];
+}
 
-removeDup();
+const setArray = removeDup(numArray);
+console.log(setArray);
 module.exports = { removeDup };

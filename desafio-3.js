@@ -3,7 +3,11 @@
 const numArray = [1, 2, 3, 4, 5];
 
 //Use a seguinte função para sua resposta
-function addElement() {}
+function addElement(array ,elem) {
+    array.push(elem);
+    return numArray;
+}
 
-addElement();
+const newArray = addElement(numArray, 7)
+console.log(newArray);
 module.exports = { addElement };

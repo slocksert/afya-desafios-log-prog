@@ -3,8 +3,10 @@
 const numArray = [1, 2, 3, 4, 5];
 
 //Use a seguinte função para sua resposta
-function reverseArray() {}
+function reverseArray(array) {
+    return array.reverse()
+}
 
-reverseArray();
-
+const reversedArray = reverseArray(numArray);
+console.log(reversedArray);
 module.exports = { reverseArray };

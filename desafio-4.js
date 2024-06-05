@@ -4,8 +4,11 @@
 const numArray = [1, 2, 3, 4, 5];
 
 //Use a seguinte função para sua resposta
-function doubleValues() {}
+function doubleValues(array) {
+    return array.map((value) => value * 2)
+}
 
-doubleValues();
+const doubledArray = doubleValues(numArray);
+console.log(doubledArray)
 
 module.exports = { doubleValues };
